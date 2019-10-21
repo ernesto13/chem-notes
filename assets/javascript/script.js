@@ -15,17 +15,18 @@ cholCalc.on('click', (e) => {
     let trig = $('#trig-input').val();
 
     // formula chol - (trig / 5 + HDL) 194-(31.66 + 82.1) = 80.24
-   
+   let totalCalculation = chol - hdlCalculation;
+
+   let trigCalculation = trig / 5;
+
+   let hdlCalculation = trigCalculation + hdl;
+
     // make variables here for calculations
 
 
     // if statement here for empty inputs
 
-
-
-})
-
-
+});
 
 
 });
