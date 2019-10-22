@@ -16,8 +16,10 @@ ul {
     list-style-type: none;
 }
 
-span > .input-group-text {
-  text-decoration: line-through;
+.completed {
+  text-decoration: green line-through;
+  opacity: .7;
+  
 }
 hr {
     background-color: black;
