@@ -3,6 +3,11 @@ $(document).ready(function () {
     $(function () {
         $('[data-toggle="popover"]').popover();
     });
+  
+  
+  $('.input-group-text').on('click', function(){
+    $(this).addClass('line-through')
+  })
 
 // chol calculation
 
@@ -13,6 +18,7 @@ cholCalc.on('click', (e) => {
     let chol = $('#chol-input').val();
     let hdl = $('#hdl-input').val();
     let trig = $('#trig-input').val();
+  
 
     // formula chol - (trig / 5 + HDL) 194-(31.66 + 82.1) = 80.24
    let totalCalculation = chol - hdlCalculation;

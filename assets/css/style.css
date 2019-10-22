@@ -16,6 +16,9 @@ ul {
     list-style-type: none;
 }
 
+span > .input-group-text {
+  text-decoration: line-through;
+}
 hr {
     background-color: black;
 
