@@ -29,13 +29,15 @@ $(document).ready(function() {
 
     let cholEquation = chol - totalParens;
     console.log('Chol Calc: ' + cholEquation);
-    
-    
-      $('#cholCalculation').html('LDL Chol Calc: ' + cholEquation)
-   
 
 
-    // if statement here for empty inputs
+    if (isNaN(chol) || chol === "" || isNaN(hdl) || hdl === "" || isNaN(trig) || trig === "") {
+      $('#cholCalculation').html("<h5>" + "Error, All fields required!!" + "</h5>");
+
+    } else {
+
+      $('#cholCalculation').html('LDL Chol Calc: ' + cholEquation);
+    }
 
   });
 
