@@ -5,9 +5,9 @@ $(document).ready(function() {
   });
 
 
-  $('ul').on('click', 'li', function() {
-    $(this).toggleClass('completed')
-  })
+//   $('ul').on('click', '.input-group-text', function() {
+//     $(this).toggleClass('completed')
+//   })
 
   // chol calculation
 
