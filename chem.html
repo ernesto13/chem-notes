@@ -2,20 +2,123 @@
 <html>
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Chem || Notes</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <title>Chem Notes</title>
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="container">
+<!-- updated 10/29/19 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">3rd Shift Chem QC <i class="fas fa-flask"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-        <h1>Chem Notes</h1>
+    <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" style="color: #3fb73f" onclick="print()" href="#">Print Page</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          More
+        </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="heme.html">Sysmex</a>
+            <a class="dropdown-item" href="chem.html">Monthly QC</a>
+            <a class="dropdown-item" href="osmo.html">Osmo</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="ldl.html">LDL Chol Calc</a>
+          </div>
+        </li>
 
+      </ul>
 
     </div>
+  </nav>
+
+  <div class="jumbotron">
+
+    <h3 class="text-center">Monthly QC</h3>
+
+    <ul>
+      <li>
+
+        <div class="input-group mb-1">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <input type="checkbox" aria-label="Checkbox for following text input" class="checkbox-circle">
+            </div>
+            <span class="input-group-text">UR 1</span>
+            <span class="input-group-text" data-toggle="popover" title="HCG" data-content="UR 1 = Neg, UR 2 = Pos <strong>(UA Controls)</strong>" data-html="true">QC-2303</span>
+          </div>
+
+        </div>
+
+      </li>
+      <li>
+
+        <div class="input-group">
+          <div class="input-group-prepend mb-1">
+            <div class="input-group-text">
+              <input type="checkbox" aria-label="Checkbox for following text input">
+            </div>
+            <span class="input-group-text">UR 2</span>
+            <span class="input-group-text">QC-2304</span>
+          </div>
+
+        </div>
+
+      </li>
+      <hr />
+      <li>
+
+        <div class="input-group mb-1">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <input type="checkbox" aria-label="Checkbox for following text input">
+            </div>
+            <span class="input-group-text">Serum QC 1</span>
+            <span class="input-group-text" data-toggle="popover" title="HCG" data-content="QC 1 = Neg, QC 2 = Pos <strong>(Lig Controls)</strong>" data-html="true">QC-2305</span>
+          </div>
+
+        </div>
+
+      </li>
+      <li>
+
+        <div class="input-group mb-1">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <input type="checkbox" aria-label="Checkbox for following text input">
+            </div>
+            <span class="input-group-text">Serum QC 2</span>
+            <span class="input-group-text">QC-2306</span>
+          </div>
+
+        </div>
+
+      </li>
+
+    </ul>
+
+    <hr/>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
